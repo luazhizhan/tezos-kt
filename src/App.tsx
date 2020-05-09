@@ -1,25 +1,50 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import MainLayout from './layouts/MainLayout';
+import RpcHost from './components/RpcHost';
+import SmartContractOp from './components/SmartContractOp';
 
 function App() {
+  const [currentHost, setCurrentHost] = useState('Not selected');
+  const [currentSelHostVal, setCurrentSelHostVal] = useState('');
+  const [contractOp, setContractOp] = useState('Origination');
+  const [opAmt, setOpAmt] = useState(0);
+  const [contractAddr, setContractAddr] = useState('');
+  const [michelineCode, setMichelineCode] = useState('');
+  const [storageCode, setStorageCode] = useState('');
+  const [originationRes, setOriginationRes] = useState({
+    operation_id: '',
+    originated_contracts: [[]],
+  });
+  const [transactionRes, setTransactionRes] = useState({
+    operation_id: '',
+    originated_contracts: [[]],
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MainLayout>
+      <RpcHost
+        currentSelHostVal={currentSelHostVal}
+        currentHost={currentHost}
+        setCurrentSelHostVal={setCurrentSelHostVal}
+        setCurrentHost={setCurrentHost}
+      />
+      <SmartContractOp
+        contractOp={contractOp}
+        opAmt={opAmt}
+        contractAddr={contractAddr}
+        michelineCode={michelineCode}
+        storageCode={storageCode}
+        originationRes={originationRes}
+        transactionRes={transactionRes}
+        setContractOp={setContractOp}
+        setOpAmt={setOpAmt}
+        setContractAddr={setContractAddr}
+        setMichelineCode={setMichelineCode}
+        setStorageCode={setStorageCode}
+        setOriginationRes={setOriginationRes}
+        setTransactionRes={setTransactionRes}
+      />
+    </MainLayout>
   );
 }
 

@@ -1,0 +1,83 @@
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #2979ff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav :first-child {
+  background-color: #1c54b2;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #5393ff;
+  color: #333;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.content {
+  float: left;
+  width: 100%;
+  margin-top: 50px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin: 10px 10px;
+}
+
+.cardDiv {
+  margin-top: 16px;
+}
+
+.submitBtn {
+  margin-top: 16px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .content {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* Style the footer */
+.footer {
+  background-color: #333;
+  padding: 8px;
+  color: #f2f2f2;
+  font-size: 15px;
+  text-align: center;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #5393ff;
+}
