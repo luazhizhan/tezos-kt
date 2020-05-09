@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import MainLayout from './layouts/MainLayout';
 import RpcHost from './components/RpcHost';
 import SmartContractOp from './components/SmartContractOp';
+import './assets/home.css';
 
 function App() {
   const [currentHost, setCurrentHost] = useState('Not selected');

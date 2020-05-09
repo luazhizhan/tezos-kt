@@ -157,7 +157,7 @@ function SmartContractOp(props: {
           type="text"
           value={contractAddr}
           onChange={(event) => onContractAddrChange(event)}
-          style={{ width: '80%', height: '28px', marginTop: '16px' }}
+          className="textbox"
         />
       </div>
 
@@ -170,7 +170,7 @@ function SmartContractOp(props: {
           min={0}
           value={opAmt}
           onChange={(event) => onAmtChange(event)}
-          style={{ width: '80%', height: '28px', marginTop: '16px' }}
+          className="numBox"
         />
       </div>
 
@@ -182,7 +182,7 @@ function SmartContractOp(props: {
           cols={100}
           value={michelineCode}
           onChange={(event) => onMichelineCodeChange(event)}
-          style={{ width: '80%', minHeight: '300px', marginTop: '16px' }}
+          className="textbox"
         />
       </div>
 
@@ -194,7 +194,7 @@ function SmartContractOp(props: {
           cols={100}
           value={storageCode}
           onChange={(event) => onStorageCodeChange(event)}
-          style={{ width: '80%', minHeight: '300px', marginTop: '16px' }}
+          className="textbox"
         />
       </div>
       <button type="button" className="submitBtn" onClick={onSCOpClick}>

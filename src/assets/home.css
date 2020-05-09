@@ -1,0 +1,26 @@
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin: 10px 10px;
+}
+
+.cardDiv {
+  margin-top: 16px;
+}
+
+.submitBtn {
+  margin-top: 16px;
+}
+
+.textbox {
+  width: 80%;
+  min-height: 300px;
+  margin-top: 16px;
+}
+
+.numBox {
+  width: 80%;
+  height: 28px;
+  margin-top: 16px;
+}
