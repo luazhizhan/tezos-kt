@@ -1,0 +1,14 @@
+.not-found-card {
+  text-align: center;
+  min-height: 100vh;
+}
+
+.not-found-img {
+  min-width: 250px;
+  max-width: 50%;
+  margin-top: 2rem;
+}
+
+.not-found-btn {
+  margin-top: 2rem;
+}

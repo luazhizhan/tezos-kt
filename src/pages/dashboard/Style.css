@@ -1,0 +1,15 @@
+.submitBtn {
+  margin-top: 2rem;
+}
+
+.textbox {
+  width: 80%;
+  min-height: 300px;
+  margin-top: 16px;
+}
+
+.numBox {
+  width: 80%;
+  height: 28px;
+  margin-top: 16px;
+}

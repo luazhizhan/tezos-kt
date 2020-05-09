@@ -1,6 +1,6 @@
 import React from 'react';
-import TezBridgeRes from '../interfaces/TezBridgeRes';
-import { originTezBridgeReq, txnTezBridgeReq, checkOpInput } from '../services/TezBridge';
+import TezBridgeRes from '../../interfaces/TezBridgeRes';
+import { originTezBridgeReq, txnTezBridgeReq, checkOpInput } from '../../services/TezBridge';
 
 function SmartContractOp(props: {
   opAmt: number;
@@ -102,7 +102,7 @@ function SmartContractOp(props: {
         <label>Operation Type: </label>
         <br />
         <input
-          className="cardDiv"
+          className="card-div"
           type="radio"
           value="Origination"
           name="Origination"
@@ -121,7 +121,7 @@ function SmartContractOp(props: {
       </div>
 
       {/* Transaction Result */}
-      <div className="cardDiv" hidden={transactionRes.operation_id === ''}>
+      <div className="card-div" hidden={transactionRes.operation_id === ''}>
         <h3>Transaction Result</h3>
         <label>Operation ID: </label>
         <a
@@ -134,7 +134,7 @@ function SmartContractOp(props: {
       </div>
 
       {/* Origination Result */}
-      <div className="cardDiv" hidden={originationRes.operation_id === ''}>
+      <div className="card-div" hidden={originationRes.operation_id === ''}>
         <h3>Origination Result</h3>
         <label>Operation ID: </label>
         <a
@@ -150,7 +150,7 @@ function SmartContractOp(props: {
       </div>
 
       {/* Contract Address - Transaction Only */}
-      <div className="cardDiv" hidden={contractOp === 'Origination'}>
+      <div className="card-div" hidden={contractOp === 'Origination'}>
         <label>Contract Address: </label>
         <br />
         <input
@@ -162,7 +162,7 @@ function SmartContractOp(props: {
       </div>
 
       {/* Amount (tez) */}
-      <div className="cardDiv">
+      <div className="card-div">
         <label>Amount (tez): </label>
         <br />
         <input
@@ -175,7 +175,7 @@ function SmartContractOp(props: {
       </div>
 
       {/* Micheline Code / Parameters */}
-      <div className="cardDiv" hidden={false}>
+      <div className="card-div" hidden={false}>
         <label>Micheline Code / Parameters*: </label>
         <p style={{ fontSize: '12px' }}>*For integer value, please set it as string</p>
         <textarea
@@ -187,7 +187,7 @@ function SmartContractOp(props: {
       </div>
 
       {/* Storage Code - Origination Only */}
-      <div className="cardDiv" hidden={contractOp === 'Transaction'}>
+      <div className="card-div" hidden={contractOp === 'Transaction'}>
         <label>Storage Code (Micheline): </label>
         <br />
         <textarea
@@ -200,6 +200,9 @@ function SmartContractOp(props: {
       <button type="button" className="submitBtn" onClick={onSCOpClick}>
         Submit
       </button>
+      <p style={{ color: 'red' }}>
+        *THIS PROJECT HAS NOT BEEN AUDITED. USE MAINNET AT YOUR OWN RISK
+      </p>
     </div>
   );
 }

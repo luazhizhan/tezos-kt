@@ -1,5 +1,5 @@
 import React from 'react';
-import { mainnetHosts, carthagenetHosts } from '../utils/hosts';
+import { mainnetHosts, carthagenetHosts } from '../../utils/hosts';
 
 function RpcHost(props: {
   currentSelHostVal: string;
