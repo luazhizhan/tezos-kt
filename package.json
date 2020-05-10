@@ -1,6 +1,6 @@
 {
   "name": "tezos-kt",
-  "version": "0.5.0",
+  "version": "1.0.2",
   "author": "Lua Zhi Zhan",
   "scripts": {
     "start": "react-scripts start",

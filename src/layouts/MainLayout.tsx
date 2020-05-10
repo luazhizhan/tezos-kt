@@ -2,6 +2,7 @@
 import React, { ReactNode } from 'react';
 import './Style.css';
 import '../assets/styles/Card.css';
+import '../assets/styles/Button.css';
 
 function MainLayout(props: { children: ReactNode }) {
   const { children } = props;

@@ -1,0 +1,27 @@
+.image-span {
+  min-width: 50%;
+  text-align: center;
+}
+
+.image-span:hover {
+  background-color: #96bdfd;
+}
+
+.text-span {
+  min-width: 50%;
+  padding-bottom: 20px;
+}
+
+.open-src-img {
+  width: 20em;
+}
+
+.contract-img {
+  width: 15em;
+}
+
+@media screen and (max-width: 760px) {
+  .open-src-img {
+    width: 15em;
+  }
+}
