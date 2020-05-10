@@ -149,18 +149,6 @@ function SmartContractOp(props: {
         <span>{originationRes.originated_contracts[0][0]}</span>
       </div>
 
-      {/* Contract Address - Transaction Only */}
-      <div className="card-div" hidden={contractOp === 'Origination'}>
-        <label>Contract Address: </label>
-        <br />
-        <input
-          type="text"
-          value={contractAddr}
-          onChange={(event) => onContractAddrChange(event)}
-          className="textbox"
-        />
-      </div>
-
       {/* Amount (tez) */}
       <div className="card-div">
         <label>Amount (tez): </label>
@@ -170,6 +158,18 @@ function SmartContractOp(props: {
           min={0}
           value={opAmt}
           onChange={(event) => onAmtChange(event)}
+          className="numBox"
+        />
+      </div>
+
+      {/* Contract Address - Transaction Only */}
+      <div className="card-div" hidden={contractOp === 'Origination'}>
+        <label>Contract Address: </label>
+        <br />
+        <input
+          type="text"
+          value={contractAddr}
+          onChange={(event) => onContractAddrChange(event)}
           className="numBox"
         />
       </div>
