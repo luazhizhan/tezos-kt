@@ -197,7 +197,7 @@ function SmartContractOp(props: {
           className="textbox"
         />
       </div>
-      <button type="button" className="submitBtn" onClick={onSCOpClick}>
+      <button type="button" className="button btn-primary submitBtn" onClick={onSCOpClick}>
         Submit
       </button>
       <p style={{ color: 'red' }}>

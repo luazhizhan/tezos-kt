@@ -59,7 +59,7 @@ function RpcHost(props: {
         ))}
       </select>
       <br />
-      <button type="button" className="submitBtn" onClick={onRPCHostClick}>
+      <button type="button" className="button btn-primary submitBtn" onClick={onRPCHostClick}>
         Submit
       </button>
     </div>

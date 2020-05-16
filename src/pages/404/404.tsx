@@ -10,7 +10,7 @@ function FourZeroFour() {
       <img src={notFound} alt="404 not found" className="not-found-img" />
       <br />
       <Link to="/">
-        <button type="button" className="not-found-btn">
+        <button type="button" className="button btn-primary not-found-btn">
           Back to home
         </button>
       </Link>

@@ -6,3 +6,39 @@ a.button {
   text-decoration: none;
   color: initial;
 }
+
+.button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #2979ff;
+  color: white;
+  border: 2px solid #2979ff;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: #2979ff;
+}
+
+.btn-secondary {
+  background-color: #1c54b2;
+  color: white;
+  border: 2px solid #1c54b2;
+}
+
+.btn-secondary:hover {
+  background-color: white;
+  color: #1c54b2;
+}

@@ -15,11 +15,22 @@ function Home() {
           <h1>Tezos KT</h1>
           <p>Deploy and interact with your tezos contract here.</p>
           <Link to="/dashboard">
-            <button type="button">Go To Dashboard</button>
+            <button type="button" className="button btn-primary">Go To Dashboard</button>
           </Link>
         </span>
         <span className="image-span">
           <img src={contractImg} alt="Contract" className="contract-img" />
+        </span>
+      </div>
+      <CardTitle title="Features" />
+      <div className="card flex-card">
+        <span className="image-span">
+          <img src={deployImg} alt="Contract deployment" style={{ width: '15em' }} />
+          <h3>Smart Contract Deployment</h3>
+        </span>
+        <span className="image-span">
+          <img src={interactImg} alt="Contract interection" style={{ width: '15em' }} />
+          <h3>Smart Contract Interection</h3>
         </span>
       </div>
       <CardTitle title="Open Source" />
@@ -37,17 +48,6 @@ function Home() {
           >
             View Project
           </a>
-        </span>
-      </div>
-      <CardTitle title="Features" />
-      <div className="card flex-card">
-        <span className="image-span">
-          <img src={deployImg} alt="Contract deployment" style={{ width: '15em' }} />
-          <h3>Smart Contract Deployment</h3>
-        </span>
-        <span className="image-span">
-          <img src={interactImg} alt="Contract interection" style={{ width: '15em' }} />
-          <h3>Smart Contract Interection</h3>
         </span>
       </div>
     </>
