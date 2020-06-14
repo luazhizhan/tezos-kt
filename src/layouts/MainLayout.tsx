@@ -9,13 +9,13 @@ function MainLayout(props: { children: ReactNode }) {
   return (
     <>
       <div className="topnav">
-        <a href="/">Tezos KT</a>
+        <a href="/">TezosKT</a>
         <a href="/dashboard">Dashboard</a>
       </div>
       <div className="page-container">
         <div className="content-wrap">{children}</div>
         <div className="footer">
-          Copyright © Tezos KT {new Date().getFullYear()}
+          Copyright © TezosKT {new Date().getFullYear()}
           <br />
           <a
             href="https://github.com/luazhizhan/tezos-kt"
