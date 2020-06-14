@@ -13,7 +13,7 @@ function Home() {
       <div className="card flex-card">
         <span className="text-span">
           <h1>Tezos KT</h1>
-          <p>Deploy and interact with your tezos contract here.</p>
+          <p>Deploy and interact with your Tezos&apos;s Smart Contract here.</p>
           <Link to="/dashboard">
             <button type="button" className="button btn-primary">
               Go To Dashboard

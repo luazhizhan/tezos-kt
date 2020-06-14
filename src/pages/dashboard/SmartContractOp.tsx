@@ -177,7 +177,7 @@ function SmartContractOp(props: {
       {/* Micheline Code / Parameters */}
       <div className="card-div" hidden={false}>
         <label>Micheline Code / Parameters*: </label>
-        <p style={{ fontSize: '12px' }}>*For integer value, please set it as string</p>
+        <br />
         <textarea
           cols={100}
           value={michelineCode}
