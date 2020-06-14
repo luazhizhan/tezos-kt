@@ -15,7 +15,7 @@ Install project dependencies.
 yarn
 ```
 
-Start the application at <http://local:3000>
+Start the application at <http://localhost:3000/>
 
 ```bash
 yarn start
