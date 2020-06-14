@@ -125,7 +125,7 @@ function SmartContractOp(props: {
         <h3>Transaction Result</h3>
         <label>Operation ID: </label>
         <a
-          href={`https://you.better-call.dev/opg/${transactionRes.operation_id}`}
+          href={`https://better-call.dev/search?text=${transactionRes.operation_id}`}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -138,7 +138,7 @@ function SmartContractOp(props: {
         <h3>Origination Result</h3>
         <label>Operation ID: </label>
         <a
-          href={`https://you.better-call.dev/opg/${originationRes.operation_id}`}
+          href={`https://better-call.dev/search?text=${originationRes.operation_id}`}
           target="_blank"
           rel="noopener noreferrer"
         >

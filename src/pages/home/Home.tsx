@@ -15,7 +15,9 @@ function Home() {
           <h1>Tezos KT</h1>
           <p>Deploy and interact with your tezos contract here.</p>
           <Link to="/dashboard">
-            <button type="button" className="button btn-primary">Go To Dashboard</button>
+            <button type="button" className="button btn-primary">
+              Go To Dashboard
+            </button>
           </Link>
         </span>
         <span className="image-span">
